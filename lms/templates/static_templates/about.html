@@ -1,0 +1,20 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>${_("About DCAS")}</h1>
+        <p>${_("The Department of Citywide Administrative Services (DCAS) ensures that City agencies have the critical resources and support needed to provide the best possible services to the public. Specifically, the agency:")}</p>
+	<ul>
+	<li>supports City agencies' workforce needs in recruiting, hiring and training City employees;</li>
+	<li>provides overall facilities management for 55 public buildings;</li>
+	<li>purchases, sells and leases real property;</li>
+	<li>purchases, inspects and distributes supplies and equipment;</li>
+	<li>establishes, audits and pays utility accounts that serve more than 4,000 buildings;</li>
+	<li>implements energy conservation programs throughout City facilities.</li>
+	</ul>
+    </section>
+</main>
