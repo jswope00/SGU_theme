@@ -49,7 +49,7 @@ site_status_msg = get_site_status_msg(course_id)
 </%block>
 <div class="nav-holder" aria-label="${_('Global')}">
   <header id="global-navigation" class="theme-header header-global ${"slim" if course else ""}" >
-    <div class="theme-header-info">
+    <!--<div class="theme-header-info">
         <div class="theme-header-info_contact">
             <span class="theme-header-info_text">Have any question?</span>
             <span class="theme-header-info_phone">Dial 311</span>
@@ -62,9 +62,9 @@ site_status_msg = get_site_status_msg(course_id)
                 <li class="social-list_item"><a class="social-list_link social-list_link__facebook" target="_blank" href="https://www.facebook.com/NYCCitywideAdministrativeServices"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li class="social-list_item"><a class="social-list_link social-list_link__linkedin" target="_blank" href="https://www.linkedin.com/company/department-of-citywide-administrative-services"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
-        </div>
-    </div>
-    <div class="theme-nav-wrapper" aria-label="${_('Global')}">
+        </div> 
+    </div> -->
+    <div class="theme-nav-wrapper" aria-label="${_('Global')}" style="padding-top: 30px">
       <a href="${marketing_link('ROOT')}">
         <%block name="navigation_logo">
             <span class="theme-nav-wrapper_logo-holder">
