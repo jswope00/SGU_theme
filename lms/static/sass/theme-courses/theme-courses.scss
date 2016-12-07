@@ -51,6 +51,7 @@
         margin-bottom: 5px;
         text-align: left;
         text-transform: uppercase;
+	width: 250px; //John's update to make the dashboard images the same width
 
         .content-wrapper .course & {
             font: 24px/1 'Work Sans', sans-serif !important;
@@ -126,7 +127,7 @@
     &_ico-holder {
         padding-right: 5px;
         font-size: 28px;
-        color: #ebbe20;
+        color: #010e3b;
     }
     &_img-link {
         display: inline-block;

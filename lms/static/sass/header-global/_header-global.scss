@@ -6,7 +6,7 @@
 
         &:hover {
             background: none;
-            color: $theme-color-main;
+            color: #f1da76;
         }
     }
     .nav-global {
@@ -33,6 +33,7 @@
         .dropdown {
             margin: 5px 0 0;
             background: transparent;
+	    color: #fff;
         }
         .user-link {
             .user-image-frame {

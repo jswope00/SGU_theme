@@ -1,5 +1,5 @@
 .theme-main-nav {
-    background: #1f1d20;
+    background: #f1da76;
     width: 100%;
     order: -1;
     position: relative;
@@ -33,7 +33,7 @@
         padding: 12px 30px 13px;
         text-align: center;
         display: block;
-        color: #fff !important;
+        color: $theme-color-main !important;
         @media all and (min-width: 450px){
             text-align: left;
         }
@@ -45,7 +45,7 @@
         &:hover {
             background: $theme-color-main;
             text-decoration: none;
-            color: #1f1d20 !important;
+            color: #fff !important;
         }
     }
     &_item {
