@@ -15,14 +15,32 @@ from django.core.urlresolvers import reverse
         <span class="theme-courses_org">${course.display_org_with_default}</span>
         <span class="theme-courses_code">${course.display_number_with_default}</span>
         <h1 class="theme-courses_title">${course.display_name_with_default}</h1>
-        <div class="theme-courses_date" aria-hidden="true"><span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>${_("Starts")}: ${course.start_datetime_text()}</div>
-        <div class="sr">
-            <ul>
-                <li>${course.display_org_with_default}</li>
-                <li>${course.display_number_with_default}</li>
-                <li>${_("Starts")}: <time itemprop="startDate" datetime="${course.start_datetime_text()}">${course.start_datetime_text()}</time></li>
-            </ul>
-        </div>
-        <a class="theme-btn" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">view more</a>
+        <%
+        if course.start is not None:
+          course_date_string = course.start.strftime('%Y-%m-%dT%H:%M:%S%z')
+        else:
+          course_date_string = ''
+        %>
+        % if course.advertised_start is not None:
+          <div class="theme-courses_date" aria-hidden="true"><span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>${_("Starts")}: ${course.advertised_start}</div>
+        % else:
+          <div class="theme-courses_date"><span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span><div class="localized_datetime" aria-hidden="true" data-format="shortDate" data-datetime="${course_date_string}" data-string="${_("Starts: {date}")}"></div>
+          </div>
+        % endif
+    <div class="sr">
+      <ul>
+        <li>${course.display_org_with_default}</li>
+        <li>${course.display_number_with_default}</li>
+        % if course.advertised_start is not None:
+            <li>${_("Starts")}: <time itemprop="startDate">${course.advertised_start}</time></li>
+        % else:
+            <li>${_("Starts")}: <time class="localized_datetime" itemprop="startDate" data-format="shortDate" data-datetime="${course_date_string}"></time></li>
+        % endif
+     </ul>
+    </div>
+    <a class="theme-btn" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">view more</a>
     </div>
 </article>
+<%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
+    DateUtilFactory.transform(iterationKey=".localized_datetime");
+</%static:require_module_async>
