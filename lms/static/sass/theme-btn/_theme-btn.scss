@@ -2,8 +2,8 @@
 .theme-btn {
     @include inline-block;
     font: 14px/1.3 muliregular;
-    color: #fff !important;
-    border: 2px solid #fff;
+    color: $theme-color-secondary !important;
+    border: 2px solid $theme-color-secondary;
     padding: 7px 24px 6px;
     box-shadow: none;
     border-radius: 0;
@@ -14,18 +14,18 @@
     &:hover {
         color: $theme-color-main !important;
         background: #fff;
-        border-color: #fff;
+        border-color: $theme-color-main;
         text-decoration: none;
     }
 
     &__invert {
-        color: #010e3b !important;
-        background: #f1da76;
-        border: 1px solid #f1da76;
+        color: #fff !important;
+        background: $theme-color-secondary;
+        border: 1px solid #fff;
 	font: 22px/1.5 muliregular;
         
         &:hover {
-            color: #010e3b !important;
+            color: $theme-color-main !important;
             background: #fff;
             border: 1px solid #fff;
         }
@@ -46,8 +46,8 @@
     }
 }
 .theme-footer_section .theme-btn {
-	color: #010e3b !important;
-	border: 2px solid #010e3b;
+	color: $theme-color-main !important;
+	border: 2px solid $theme-color-main;
 }
 
 .theme-footer_section a .theme-btn:hover {

@@ -1,6 +1,6 @@
 .theme-header-info {
     box-sizing: border-box;
-    padding: 14px $mobile-indent 36px;
+    padding: 14px $mobile-indent 16px;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -40,7 +40,7 @@
     &_text {
         font-size: 12px;
         line-height: 15px;
-        color: $theme-color-grey;
+        color: $theme-dark-gray;
         display: none;
         @media all and (min-width: 860px){
             display: block;
@@ -50,7 +50,7 @@
     &_phone {
         font-size: 12px;
         line-height: 15px;
-        color: $theme-color-grey;
+        color: $theme-dark-gray;
         padding-left: 18px;
         background: url('#{$theme-img-path}phone.png') no-repeat 0 50%;
         @media all and (min-width: 860px){
@@ -60,7 +60,7 @@
     &_mail {
         font-size: 12px;
         line-height: 15px;
-        color: $theme-color-grey;
+        color: $theme-dark-gray;
         background: url('#{$theme-img-path}mail.png') no-repeat 0 50%;
         padding-left: 18px;
         margin-left: 18px;
@@ -78,5 +78,5 @@
     }
 }
 .theme-header {
-    background: #010e3b;
+    background: #eee;
 }

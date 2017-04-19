@@ -1,0 +1,15 @@
+.search-bar {
+    .search-button,
+    .cancel-button,
+    .search-button:hover,
+    .cancel-button:hover {
+        background: $theme-color-secondary;
+
+    &:active {
+        background: darken($theme-color-secondary, 20%);
+    }
+    &:hover {
+        background: darken($theme-color-secondary, 20%);
+    }
+    }
+}

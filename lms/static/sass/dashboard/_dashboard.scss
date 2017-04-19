@@ -14,11 +14,24 @@
             .course-actions .action {
                 height: 35px;
                 padding: 8px !important;
-                color: $theme-color-main !important;
+                color: $theme-color-secondary;
             }
+            .course-actions .wrapper-action-more .action-more {
+                color: $theme-dark-gray;
+            }
+
+            .theme-courses_title a {
+                color: $theme-color-secondary;
+            }
+
+                .theme-courses_title:hover {
+                    color: darken($theme-color-secondary, 20%);
+                    text-decoration: none;
+                }
         }
         .wrapper-header-courses {
             padding: 0 10px;
+            border-bottom: 4px solid $theme-color-secondary;
         } 
     }
     .profile-sidebar {

@@ -2,11 +2,11 @@
     .primary>a {
         box-shadow: none;
         text-shadow: none;
-        color: #fff;
+        color: $theme-color-secondary;
 
         &:hover {
             background: none;
-            color: #f1da76;
+            color: darken($theme-color-secondary, 20%);
         }
     }
     .nav-global {
@@ -33,7 +33,7 @@
         .dropdown {
             margin: 5px 0 0;
             background: transparent;
-	    color: #fff;
+	    color: $theme-color-secondary;
         }
         .user-link {
             .user-image-frame {
