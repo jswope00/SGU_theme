@@ -100,23 +100,6 @@ from student.helpers import (
           <span class="theme-courses_date" data-tooltip="Hi">
           <span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
 
-<!--Comment out the old..
-          % if course_overview.has_ended():
-            ${_("Ended - {end_date}").format(end_date=course_overview.end_datetime_text("SHORT_DATE"))}
-          % elif course_overview.has_started():
-                   container_string = _("Started - {date}")
-                    course_date = course_overview.start
-         % elif course_overview.start_date_is_still_default: # Course start date TBD
-            ${_("Coming Soon")}
-          % elif course_overview.starts_within(days=5):   # hasn't started yet
-                    container_string = _("Starts - {date}")
-                    course_date = course_overview.start
-                    format = 'defaultFormat'          
-         % else:   # hasn't started yet
-                    container_string = _("Starts - {date}")
-                    course_date = course_overview.start
-          % endif
-..End Commenting out the old -->
           <%
             if course_overview.start_date_is_still_default:
                 container_string = _("Coming Soon")
