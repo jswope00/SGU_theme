@@ -5,7 +5,16 @@
         padding: 40px;
     }
     .courses .course {
-        border-color: $theme-color-main;
+        border-color: $theme-color-secondary;
+	
+	.course-image .cover-image .learn-more {
+	   border-color: $theme-color-secondary;
+	   background: $theme-color-secondary;
+	}
+	
+	.course-info .course-title {
+	   color: $theme-color-secondary;
+	}
     }
 }
 .find-courses .courses {
@@ -32,4 +41,8 @@
     .discovery-input {
         border-color: $theme-color-main;
     }
+}
+
+.highlighted-courses .courses .course:hover {
+	box-shadow: 0 1px 4px 0 $theme-color-secondary;
 }

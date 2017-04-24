@@ -1,0 +1,15 @@
+.wrapper-course-material {
+    .course-tabs {
+        li {
+            a,
+            a:visited {
+                &:hover,
+                &:focus,
+                &.active {
+                    color: $theme-color-secondary !important;
+                    border-bottom-color: $theme-color-secondary !important;
+                }
+            }
+        }
+    }
+}
