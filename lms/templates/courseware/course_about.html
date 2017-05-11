@@ -117,7 +117,7 @@ from django.template.defaultfilters import truncatechars
         <h1 class="promo-box_heading">
           ${course.display_name_with_default_escaped}
           <!--test<button type="button">${course.display_org_with_default | h}</button>-->
-          ${get_course_about_section(request, course, 'short_description')}
+          <!--${get_course_about_section(request, course, 'short_description')}-->
         </h1>
 
         % if get_course_about_section(request, course, "video"):
