@@ -65,12 +65,12 @@ from student.helpers import (
             </a>
         % else:
             <a class="fade-cover">
-              <img src="${course_overview.image_urls['small']}" class="course-image" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
+              <img src="${course_overview.image_urls['small']}" class="theme-courses_img" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
             </a>
         % endif
       % else:
         <a class="cover">
-          <img src="${course_overview.image_urls['small']}" class="course-image" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
+          <img src="${course_overview.image_urls['small']}" class="theme-courses_img" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
         </a>
       % endif
       % if display_course_modes_on_dashboard and course_verified_certs.get('display_mode') != 'audit':
