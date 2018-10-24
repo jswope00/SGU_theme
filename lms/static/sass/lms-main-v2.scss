@@ -1,40 +1,25 @@
-// Import the original styles from edx-platform.
-@import "lms/static/sass/lms-main-v1";
+// ------------------------------
+// LMS main styling
+// Version 2 - introduces the Pattern Library
 
-// Our overrides for settings we want to change.
+// NOTE: This is the left-to-right (LTR) configured style compile.
+// It should mirror lms-main-v2-rtl w/ the exception of bi-app references.
+
+
+// Load the RTL version of the edX Pattern Library
+$pattern-library-path: '../edx-pattern-library' !default;
+@import 'edx-pattern-library/pattern-library/sass/edx-pattern-library-ltr';
+
+// Load the shared build
+@import 'build-lms-v2';
+
+// Load variables and fonts
 @import "const";
 @import "fonts";
 @import "mixins";
-$theme-img-path: "../images/header-info/";
-@import "header-info/header-info";
-$theme-img-path: "../images/nav-wrapper/";
-@import "nav-wrapper/nav-wrapper";
-$theme-img-path: "../images/theme-courses/";
-@import "theme-courses/theme-courses";
-$theme-img-path: "../images/theme-main-nav/";
-@import "theme-main-nav/theme-main-nav";
 $theme-img-path: "../images/theme-footer/";
 @import "theme-footer/theme-footer";
-@import "promo-box/promo-box";
-@import "theme-content/theme-content";
-@import "theme-aside/theme-aside";
-$theme-img-path: "../images/social-list/";
-@import "social-list/social-list";
-@import "user-list/user-list";
 @import "theme-btn/theme-btn";
-@import "nav-holder/nav-holder";
-@import "theme-header/theme-header";
-@import "content-wrapper/content-wrapper";
-@import "ugc/ugc";
-@import "course-staff/course-staff";
-@import "dashboard/dashboard";
-@import "login-register/login-register";
-@import "courses-container/courses-container";
-@import "valid/valid";
-@import "other/other";
-@import "header-global/header-global";
-@import "theme-media/theme-media";
-@import "container/container";
-@import "account-settigs-section/account-settigs-section";
-@import "layout";
-@import "search/search";
+
+// Load my standalone header for lms-main-v2
+@import 'theme-header/theme-standalone-header';

@@ -1,7 +1,7 @@
 .empty-dashboard-message a,
 .theme-btn {
     @include inline-block;
-    font: 14px/1.3 muliregular;
+    font: 14px/1.3 'Open Sans';
     color: $theme-color-secondary !important;
     border: 2px solid $theme-color-secondary;
     padding: 7px 24px 6px;
@@ -22,10 +22,10 @@
         color: #fff !important;
         background: $theme-color-secondary;
         border: 1px solid #fff;
-	font: 22px/1.5 muliregular;
+	font: 22px/1.5 'Open Sans';
         
         &:hover {
-            color: $theme-color-main !important;
+            color: #d4772d !important;
             background: #fff;
             border: 1px solid #fff;
         }
@@ -50,7 +50,3 @@
 	border: 2px solid $theme-color-main;
 }
 
-.theme-footer_section a .theme-btn:hover {
-	color: #5a666e;
-	border-color: #5a666e;
-}
