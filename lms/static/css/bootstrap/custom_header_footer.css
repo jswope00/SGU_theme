@@ -543,6 +543,14 @@ a.social-list_link {
 	text-decoration: none;
 	border-bottom: 4px solid transparent
 }
+.content-wrapper .course-tabs .nav-item.active .nav-link{
+	color: #b30838 !important;
+    	border-bottom-color: #b30838 !important;
+}
+.content-wrapper .course-tabs .nav-item:hover .nav-link{
+        color: #b30838 !important;
+        border-bottom-color: #b30838 !important;
+}
 @media (min-width: 450px) {
 	.custom-nav-holder .header-global .nav-global {
 		width: auto
