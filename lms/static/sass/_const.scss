@@ -2,13 +2,13 @@
 $theme-color-grey: #a3a3a6;
 $theme-color-main: #575656;
 $theme-color-main-hover: #575656;
-$theme-color-secondary: #b30838;
+$theme-color-secondary: #11375c;
 $theme-dark-gray: #575656;
 $disable-text-color: #3b3b3b;
 $disable-text-bg: #e8e8e8;
 $mobile-indent: 15px;
 $seq-nav-border-color: $theme-color-secondary;
-$link-color: #b30838 !default;
+$link-color: $theme-color-secondary !default;
 
 
 $res_450:   450px;
